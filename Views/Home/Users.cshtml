@@ -1,0 +1,13 @@
+@model List<User>
+
+<div class="text-center">
+    <h1>Here are some users!</h1>
+    <div class="border border-dark custom-border" style="width: 18rem;">
+    @{
+        foreach (User user in Model)
+        {
+            <p class="text-center">@user.Nombre @user.Apellido</p>
+        }
+    }
+</div>
+</div>
